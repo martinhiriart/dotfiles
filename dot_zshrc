@@ -16,4 +16,4 @@ eval "$(starship init zsh)"
 
 # neovim
 export PATH="$PATH:/opt/nvim-linux64/bin"
-export EDITOR=nvim
+export EDITOR=/opt/nvim-linux64/bin/nvim
