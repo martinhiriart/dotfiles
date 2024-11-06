@@ -1,0 +1,11 @@
+(
+    state: Enabled,
+    click_method: Some(Clickfinger),
+    disable_while_typing: Some(true),
+    scroll_config: Some((
+        method: Some(TwoFinger),
+        natural_scroll: Some(true),
+        scroll_button: None,
+        scroll_factor: Some(1.0),
+    )),
+)

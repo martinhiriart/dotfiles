@@ -1,0 +1,11 @@
+{
+    0: (
+        name: "Dev",
+        command: "",
+        syntax_theme_dark: "COSMIC Dark",
+        syntax_theme_light: "COSMIC Light",
+        tab_title: "Dev",
+        working_directory: "/home/martinhiriart/workspace/github.com/martinhiriart",
+        hold: false,
+    ),
+}

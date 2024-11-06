@@ -1,0 +1,72 @@
+{
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "s",
+    ): ToggleStacking,
+    (
+        modifiers: [
+            Super,
+        ],
+    ): Disable,
+    (
+        modifiers: [
+            Ctrl,
+            Alt,
+        ],
+        key: "q",
+    ): System(LockScreen),
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "bracketright",
+    ): MoveToNextWorkspace,
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "bracketleft",
+    ): MoveToPreviousWorkspace,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "space",
+    ): System(Launcher),
+    (
+        modifiers: [
+            Alt,
+        ],
+        key: "q",
+    ): Close,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "s",
+    ): Disable,
+    (
+        modifiers: [
+            Alt,
+        ],
+        key: "space",
+    ): System(Launcher),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "t",
+    ): Spawn("kitty"),
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "m",
+    ): Minimize,
+}
