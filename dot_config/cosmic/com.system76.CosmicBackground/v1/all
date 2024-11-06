@@ -1,6 +1,6 @@
 (
     output: "all",
-    source: Path("/home/martinhiriart/Pictures/digital-art-style-sea-landscape.jpg"),
+    source: Path("/home/martinhiriart/Pictures/backgrounds/cat-sound.png"),
     filter_by_theme: true,
     rotation_frequency: 3600,
     filter_method: Lanczos,
