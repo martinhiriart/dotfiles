@@ -15,8 +15,12 @@ compinit
 eval "$(starship init zsh)"
 
 # neovim
+{{ if eq .chezmoi.osRelease.id "arch" }}
+export EDITOR=/usr/bin/nvim
+{{ else }}
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export EDITOR=/opt/nvim-linux64/bin/nvim
+{{ end }}
 
 # go
 export PATH=$PATH:/usr/local/go/bin
