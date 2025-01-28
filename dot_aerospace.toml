@@ -10,7 +10,7 @@ after-login-command = []
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
-    # 'exec-and-forget borders active_color=0xffF9A826 inactive_color=0xffd1d7e0 hidpi=on style=rounded width=6.0',
+    'exec-and-forget borders active_color=0xffF9A826 inactive_color=0xffe5e9ee hidpi=on style=rounded width=10.0',
 ]
 # Start AeroSpace at login
 start-at-login = true
@@ -38,6 +38,7 @@ default-root-container-orientation = 'auto'
 # See https://nikitabobko.github.io/AeroSpace/commands#move-mouse
 # Fallback value (if you omit the key): on-focused-monitor-changed = []
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+on-focus-changed = ['move-mouse window-lazy-center']
 
 # You can effectively turn off macOS "Hide application" (cmd-h) feature by toggling this flag
 # Useful if you don't use this macOS feature, but accidentally hit cmd-h or cmd-alt-h key
@@ -57,12 +58,12 @@ preset = 'qwerty'
 #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
 #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-inner.horizontal = 8
+inner.horizontal = 12
 inner.vertical = 8
-outer.left = 0
-outer.bottom = 0
-outer.top = 16
-outer.right = 0
+outer.left = 8
+outer.bottom = 8
+outer.top = 8
+outer.right = 8
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -114,6 +115,7 @@ alt-shift-l = 'move right'
 alt-shift-minus = 'resize smart -50'
 alt-shift-equal = 'resize smart +50'
 
+
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
 alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
@@ -124,11 +126,9 @@ alt-6 = 'workspace 6'
 alt-7 = 'workspace 7'
 alt-8 = 'workspace 8'
 alt-9 = 'workspace 9'
-alt-i = 'workspace I'
 alt-m = 'workspace M'
 alt-s = 'workspace S'
 alt-t = 'workspace T'
-alt-z = 'workspace Z'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1'
@@ -217,3 +217,17 @@ run = 'move-node-to-workspace S'
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
 run = 'move-node-to-workspace T'
+
+[workspace-to-monitor-force-assignment]
+1 = 'main'      # main monitor
+2 = 'main'      # main monitor
+3 = 'main'      # main monitor
+4 = 'main'      # main monitor
+5 = 'main'      # main monitor
+6 = 'main'      # main monitor
+7 = 'main'      # main monitor
+8 = 'main'      # main monitor
+9 = 'main'      # main monitor
+T = 'main'      # main monitor
+M = 'secondary'
+S = 'secondary'
