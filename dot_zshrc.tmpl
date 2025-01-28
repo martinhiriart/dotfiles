@@ -14,7 +14,7 @@ compinit
 # starship
 eval "$(starship init zsh)"
 
-# neovim
+# default editor
 {{ if eq .chezmoi.os "darwin" -}}
 export EDITOR=$(which zed)
 {{ else if eq .chezmoi.os "linux" -}}
@@ -28,4 +28,3 @@ export EDITOR=/opt/nvim-linux64/bin/nvim
 
 # go
 export PATH=$PATH:/usr/local/go/bin
-
