@@ -207,6 +207,10 @@ if.app-id = 'sh.cider.genten'
 run = 'move-node-to-workspace M'
 
 [[on-window-detected]]
+if.app-id = 'com.apple.Music'
+run = 'move-node-to-workspace M'
+
+[[on-window-detected]]
 if.app-id = 'com.clickup.desktop-app'
 run = 'move-node-to-workspace 4'
 
