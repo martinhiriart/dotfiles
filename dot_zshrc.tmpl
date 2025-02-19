@@ -34,4 +34,7 @@ export PATH=$PATH:$(go env GOPATH)/bin
 # workbrew
 {{ if eq .chezmoi.hostname "Martins-MBP"}}
 eval "$(/opt/workbrew/bin/brew shellenv)"
+
+autoload -Uz compinit
+compinit
 {{ end }}
