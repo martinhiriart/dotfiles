@@ -17,6 +17,8 @@ eval "$(starship init zsh)"
 # default editor
 {{ if eq .chezmoi.os "darwin" -}}
 export EDITOR=$(which zed)
+# also adding Tailscale CLI alias
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 {{ else if eq .chezmoi.os "linux" -}}
 {{ if eq .chezmoi.osRelease.id "arch" }}
 export EDITOR=/usr/bin/nvim
@@ -28,3 +30,11 @@ export EDITOR=/opt/nvim-linux64/bin/nvim
 
 # go
 export PATH=$PATH:$(go env GOPATH)/bin
+
+# workbrew
+{{ if eq .chezmoi.hostname "Martins-MBP"}}
+eval "$(/opt/workbrew/bin/brew shellenv)"
+
+autoload -Uz compinit
+compinit
+{{ end }}
