@@ -131,6 +131,7 @@ alt-m = 'workspace M'
 alt-n = 'workspace N'
 alt-s = 'workspace S'
 alt-t = 'workspace T'
+alt-w = 'workspace W'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1'
@@ -160,7 +161,7 @@ alt-shift-s = 'move-node-to-workspace S'
 alt-shift-t = 'move-node-to-workspace T'
 # alt-shift-u = 'move-node-to-workspace U'
 # alt-shift-v = 'move-node-to-workspace V'
-# alt-shift-w = 'move-node-to-workspace W'
+alt-shift-w = 'move-node-to-workspace W'
 # alt-shift-x = 'move-node-to-workspace X'
 # alt-shift-y = 'move-node-to-workspace Y'
 # alt-shift-z = 'move-node-to-workspace Z'
@@ -236,6 +237,10 @@ run = 'move-node-to-workspace N'
 if.app-id = 'com.canva.canvaeditor'
 run = 'move-node-to-workspace C'
 
+[[on-window-detected]]
+if.app-id = 'com.parallels.desktop.console'
+run = 'move-node-to-workspace W'
+
 [workspace-to-monitor-force-assignment]
 1 = 'main'      # main monitor
 2 = 'main'      # main monitor
@@ -250,3 +255,4 @@ T = 'main'      # main monitor
 C = 'secondary'
 M = 'secondary'
 S = 'secondary'
+W = 'secondary'
