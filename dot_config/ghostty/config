@@ -1,3 +1,4 @@
-theme="catppuccin-mocha"
+# theme="catppuccin-mocha"
+theme = "Catppuccin Latte"
 background-opacity="0.9"
 background-blur-radius="20"

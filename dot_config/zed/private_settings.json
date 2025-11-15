@@ -7,10 +7,24 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "inline_completions": {
+  "disable_ai": true,
+  "helix_mode": true,
+  "agent": {
+    "model_parameters": [],
+    "default_profile": "ask"
+  },
+  "show_edit_predictions": false,
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_text_threads": false,
     "disabled_globs": [".env", "cmd/exp/main.go"]
   },
-  "theme": "Catppuccin Mocha",
+  "icon_theme": "Catppuccin Latte",
+  "theme": "Catppuccin Latte",
   "base_keymap": "VSCode",
   "telemetry": {
     "diagnostics": false,

@@ -10,7 +10,7 @@ after-login-command = []
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
-    'exec-and-forget borders active_color=0xffF9A826 inactive_color=0xffe5e9ee hidpi=on style=rounded width=10.0',
+    'exec-and-forget borders active_color=0xff8839ef inactive_color=0xffdce0e8 hidpi=on style=rounded width=10.0',
 ]
 # Start AeroSpace at login
 start-at-login = true
@@ -58,12 +58,12 @@ preset = 'qwerty'
 #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
 #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-inner.horizontal = 12
+inner.horizontal = 10
 inner.vertical = 8
-outer.left = 8
-outer.bottom = 8
-outer.top = 8
-outer.right = 8
+outer.left = 6
+outer.bottom = 6
+outer.top = 6
+outer.right = 6
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -206,20 +206,12 @@ if.app-id = 'dev.zed.Zed'
 run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
-if.app-id = 'sh.cider.genten.mac'
-run = 'move-node-to-workspace M'
-
-[[on-window-detected]]
 if.app-id = 'com.apple.Music'
 run = 'move-node-to-workspace M'
 
 [[on-window-detected]]
 if.app-id = 'us.zoom.xos'
 run = 'move-node-to-workspace 3'
-
-[[on-window-detected]]
-if.app-id = 'com.clickup.desktop-app'
-run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
 if.app-id = 'com.tinyspeck.slackmacgap'
@@ -234,12 +226,29 @@ if.app-id = 'com.apple.Notes'
 run = 'move-node-to-workspace N'
 
 [[on-window-detected]]
-if.app-id = 'com.canva.canvaeditor'
+if.app-id = 'com.microsoft.teams2'
 run = 'move-node-to-workspace C'
 
 [[on-window-detected]]
 if.app-id = 'com.parallels.desktop.console'
 run = 'move-node-to-workspace W'
+
+[[on-window-detected]]
+if.app-id = 'inc.wonder.roam'
+run = 'move-node-to-workspace 4'
+
+[[on-window-detected]]
+if.app-id = 'inc.wonder.roam'
+if.window-title-regex-substring = 'Settings'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.hnc.Discord'
+run = 'move-node-to-workspace 5'
+
+[[on-window-detected]]
+if.app-id = 'com.jumpcloud.pwm.desktop.live'
+run = 'move-node-to-workspace 7'
 
 [workspace-to-monitor-force-assignment]
 1 = 'main'      # main monitor
@@ -252,7 +261,7 @@ run = 'move-node-to-workspace W'
 8 = 'main'      # main monitor
 9 = 'main'      # main monitor
 T = 'main'      # main monitor
+W = 'main'
 C = 'secondary'
 M = 'secondary'
 S = 'secondary'
-W = 'secondary'
